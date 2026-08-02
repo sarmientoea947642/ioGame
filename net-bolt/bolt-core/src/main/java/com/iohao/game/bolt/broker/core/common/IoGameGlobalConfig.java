@@ -48,6 +48,10 @@ public class IoGameGlobalConfig {
     public boolean externalLog;
     /** true 开启广播相关日志，默认为 false */
     public boolean broadcastLog;
+    /** 重连网关间隔,默认30秒 */
+    public long retryDelayMillis = 30000;
+    /** 重连网关最大重试次数,默认0不重试,-1无限重试 */
+    public int maxRetryCount = 0;
     /**
      * Broker（游戏网关）转发消息容错配置
      * <pre>
